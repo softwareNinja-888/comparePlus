@@ -1,0 +1,21 @@
+{% extends 'compare/layout.html' %}
+{% load static %}
+{% block body %}
+    
+<div class="container">
+    <div class="heading h1">
+        Stores Near You
+    </div>
+    {% for i in stores %}
+
+    <p>{{i.image}}</p>
+    <div class="item-container">
+        <div class="name">{{i.name}}</div>
+        <div class="image"><img src="{% static 'compare/pnp.png'%}?{% now 'U' %}"></div>
+        <div class="image">{{i.image}}</div>
+        <div class="location">{{i.location}}</div>
+        <div class="rating">{{i.rating}}</div>
+    </div>
+    {% endfor %}
+
+{% endblock %}
