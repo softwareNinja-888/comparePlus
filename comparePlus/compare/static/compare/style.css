@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 50px;
+    gap: 20px;
+}
+.heading{
+    grid-column: 1/4;
+}
+.item-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+
+    width: 25vw;
+}
+.card-body{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+img{
+    width: 80%;
+}
